@@ -6,7 +6,9 @@
 body{
     background-image: url('background3.jpg');
 }
-
+p{
+   font-family: 'Cabin', sans-serif; 
+}
 
 a
 {
@@ -26,7 +28,7 @@ a:hover
   display: block;
   position: relative;
   top: 50px;
-  left: 50px;
+  left: 20px;
   
   z-index: 1;
   
