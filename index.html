@@ -9,6 +9,7 @@
         <meta name="keywords" content="wakacje, urlop, Bałtyk, morze, Gdynia, apartamant, wynajem, apartamenty" />    
         <link href="https://fonts.googleapis.com/css?family=Cabin&amp;subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
@@ -48,11 +49,18 @@
 
 <!--tło z menu-->    
 <div class="header" id="home">
+    <div class="row brand-container">
+        <div class="col-sm-12 brand">
+            <object class="svgBrand" type="image/svg+xml" data="logo.svg">
+                <param name="src" value="logo.svg">
+            </object>
+        </div>
+    </div>
 </div>
 
+  
 
-
-<div class="background">
+<div class="background" id="background2">
 <div class="container">
     <h1 id="onas"> O nas </h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien lectus, aliquam varius libero at, eleifend finibus erat. Fusce sit amet luctus arcu. In porta felis quis magna faucibus ornare. Morbi non est elit. Praesent quis rhoncus lorem. Proin vitae elit non nunc tincidunt maximus. Donec eu nunc sit amet urna scelerisque imperdiet vitae at tortor. Etiam nec purus mollis, tincidunt lacus eget, iaculis velit. Quisque fringilla velit vitae feugiat malesuada. Aenean sodales ipsum sed vehicula imperdiet. Mauris vel erat maximus, tempus mauris sed, sagittis libero. Etiam feugiat bibendum lacus, at aliquam sem sagittis molestie.</p>
@@ -61,54 +69,125 @@
 </div>
 </div>
 
-<div class="background">
-<div class="container">
-    <h1 id="galeria">Galeria</h1>
-    <div class="row">
-        <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj1.jpg);"></a>
-        </div>
-         <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj2.jpg);"></a>
-         </div>
-         <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj3.jpg);"></a>
-         </div>
-         <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj4.jpg);"></a>
-         </div>
-         <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj5.jpg);"></a>
-         </div>
-         <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj6.jpg);"></a>
-        </div>
-        <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj7.jpg);"></a>
-        </div>
-        <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj8.jpg);"></a>
-        </div>
-        <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj9.jpg);"></a>
-        </div>
-        <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj10.jpg);"></a>
-        </div>
-        <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj11.jpg);"></a>
-        </div>
-        <div class="col-sm-3">
-             <a href="" class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj12.jpg);"></a>
+
+
+<div class="background" id="background3">
+    <div class="container">
+        <h1 id="galeria">Galeria</h1>
+        <div class="row">
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj1.jpg);" onclick="document.getElementById('modal01').style.display='block'">
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj1.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj2.jpg);" onclick="document.getElementById('modal02').style.display='block'">
+                <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj2.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj3.jpg);" onclick="document.getElementById('modal03').style.display='block'">
+                <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj3.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj4.jpg);" onclick="document.getElementById('modal04').style.display='block'">
+                <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj4.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj5.jpg);" onclick="document.getElementById('modal05').style.display='block'">
+                <div id="modal05" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj5.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj6.jpg);" onclick="document.getElementById('modal06').style.display='block'">
+                <div id="modal06" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj6.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj7.jpg);" onclick="document.getElementById('modal07').style.display='block'">
+                <div id="modal07" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj7.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj8.jpg);" onclick="document.getElementById('modal08').style.display='block'">
+                <div id="modal08" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj8.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+               <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj9.jpg);" onclick="document.getElementById('modal09').style.display='block'">
+                <div id="modal09" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj9.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj10.jpg);" onclick="document.getElementById('modal010').style.display='block'">
+                <div id="modal010" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj10.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj11.jpg);" onclick="document.getElementById('modal011').style.display='block'">
+                <div id="modal011" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj11.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <img class="ratio img-responsive img-circle zoom" style="background-image: url(pic/pokoj12.jpg);" onclick="document.getElementById('modal012').style.display='block'">
+                <div id="modal012" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                        <img src="pic/pokoj12.jpg" style="width:100%">
+                    </div>
+                </div>
+            </div>    
         </div>
     </div>
-    
-    
-
-</div>
 </div>
 
-<div class="background">
+<div class="background" id="background4">
 <div class="container">
     <h1 id="gdynia"> Gdynia </h1>
     <p>Gdynia - piękne miasto z morza i marzeń, miasto mew, statków i słonej wody. Nowoczesne, rozwijające się miasto. Ośrodek gospodarki morskiej, handlu, nauki, kultury i turystyki. Główną rolę gra tu port i Skwer Kościuszki, wokół którego skupiają się najwżniejsze atrakcje miasta. Mimo, że Gdynia jest dość młodym miastem, można natrafić tutaj na bardzo stare zabytki np. XIII- wieczny Kościół Michała Archanioła na Oksywiu. Zespół pałacowo-parkowy Kolibki, pamiętający czasy Króla Jana III Sobieskiego. Amatorzy kontaktu z naturą mają w Gdyni swój raj i to bez konieczności wyjazdu za miasto. Osiedla wkomponowane są w lasy Trójmiejskiego Parku Krajobrazowego, a jeden z najstarszych w Polsce rezerwatów przyrody - Kępa Redłowska, ze stromym klifowym brzegiem morskim - tu codziennie spacerują gdynianie. Coraz częściej zaglądają tam też turyści. Nic więc dziwnego, że gośćmi na gdyńskich osiedlach są jeże i dziki, które nie boją się ludzi. Także łabędzie, kormorany, dzikie kaczki polubiły Gdynię i właśnie tu, całymi koloniami spędzają zimę.Zachęcane są do tego przez ludzi którzy je dokarmiają. </p>
@@ -124,7 +203,7 @@
 
 <!--formularz rezerwacyjny-->
 
-<div class="background">
+<div class="background" id="background5">
     <div class="container">
         <h1 id="rezerwacja">Rezerwacja</h1>
         <form id="contact-form" method="post" action="http://herradura.pl/form.php" role="form">
@@ -174,7 +253,7 @@
                     </div>
                 </div>
                 <div class="col-md-12" id="button-send">
-                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    <input type="submit" class="btn btn-success btn-send" value="Wyślij">
                 </div>
             </div>
             
