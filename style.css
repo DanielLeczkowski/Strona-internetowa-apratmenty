@@ -1,19 +1,27 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+font-family: 'Sifonn Pro';
+font-style: normal;
+font-weight: normal;
+src: local('Sifonn Pro'), url('sifonn/SIFONN_PRO.woff') format('woff');
+}
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'sifonn Pro';
 }
 body, html{
     
     
-    font-family: 'Cabin', sans-serif;
+    
     color: #000;
     height: 100%;
     line-height: 2;
 }
 
 h1{
+    
     padding-top: 45px;
     margin-bottom: 40px;
     margin-top: 0px;
@@ -44,7 +52,6 @@ p{
   width: 100%;
   height: 100%;
   background-size: cover;
-  
   
 }
 
@@ -83,23 +90,22 @@ p{
 
 #background5{
   background-image: url('background2/background4.jpg');
-  width: 100vw;
-  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
   position: relative;
   background-size: 100% 100%;
 }
 
 #kontakt{
-  background-image: url(background2/backgroundhand1.jpg);
-  width: 100vw;
-  min-height: 100vh;
+  background-image: url('background2/backgroundhand1.jpg');
+  min-width: 100vw;
+  height: 100vh;
   position: relative;
   background-size: 100% 100%;
-  
 }
 
 #button-send{
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 a
@@ -161,7 +167,7 @@ a:hover
   margin-bottom: 5px;
   position: relative;
   
-  background: #f9f2d7;
+  background: #193f6e;
   border-radius: 3px;
   
   z-index: 1;
@@ -224,7 +230,7 @@ a:hover
   padding: 50px;
   padding-top: 125px;
   opacity: 0.5;
-  background: #754e46;
+  background: #193f6e;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -307,13 +313,13 @@ img.zoom {
 /*-- Przycisk formularza --*/
 
 .form-control {
-        background-color: #754e46;
+        background-color: #193f6e;
 }
 
 .btn-success {
     color: #fff;
-    background-color: #754e46;
-    border-color: #696744;
+    background-color: #082e5f;
+    border-color: #193f6e;
 }
 
 /*-- STOPKA --*/
@@ -348,7 +354,7 @@ img.zoom {
 .footer-distributed h3{
 	color:  #f9f2d7;
 	font: normal 36px 'Cookie', cursive;
-	margin: 0;
+	padding: 100;
 }
 
 .footer-distributed h3 span{
@@ -372,9 +378,9 @@ img.zoom {
 
 .footer-distributed .footer-company-name{
 	color:  #6d7074;
-	font-size: 14px;
+	font-size: 20px;
 	font-weight: normal;
-	margin-top: 45px;
+	margin-top: 100px;
 }
 
 /* Footer Center */
@@ -385,7 +391,7 @@ img.zoom {
 
 .footer-distributed .footer-center i{
 	background-color:  #a8ad8f;
-	color: #f9f2d7;
+	color: #000;
 	font-size: 25px;
 	width: 38px;
 	height: 38px;
@@ -403,7 +409,7 @@ img.zoom {
 
 .footer-distributed .footer-center p{
 	display: inline-block;
-	color: #f9f2d7;
+	color: #000;
 	vertical-align: middle;
 	margin:0;
 }
@@ -411,12 +417,12 @@ img.zoom {
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
-	font-size:14px;
+	font-size:20px;
 	line-height:2;
 }
 
 .footer-distributed .footer-center p a{
-	color:  #222222;
+	color:  #193f6e;
 	text-decoration: none;;
 }
 
@@ -452,7 +458,7 @@ img.zoom {
 	width: 45px;
 	height: 45px;
 	cursor: pointer;
-	background-color:  #754e46;
+	background-color:  #193f6e;
 	border-radius: 2px;
 
 	font-size: 20px;
@@ -486,4 +492,3 @@ img.zoom {
 	}
 
 }
-
